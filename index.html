@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحبا بك في عالم hacker x</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            position: relative;
+            min-width: 200px;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-google {
+            background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
+            background-size: 300% 300%;
+            animation: gradient 4s ease infinite;
+        }
+        
+        .btn-facebook {
+            background: linear-gradient(45deg, #3b5998, #8b9dc3);
+        }
+        
+        .btn-twitter {
+            background: linear-gradient(45deg, #1DA1F2, #0099ff);
+        }
+        
+        .btn-youtube {
+            background: linear-gradient(45deg, #FF0000, #FF3333);
+        }
+        
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            background-size: 200% 200%;
+            animation: gradient 4s ease infinite;
+        }
+        
+        .btn-linkedin {
+            background: linear-gradient(45deg, #0077B5, #00A0DC);
+        }
+        
+        .btn-github {
+            background: linear-gradient(45deg, #333, #6e5494);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+        
+        .btn-decoration {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-decoration::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400%;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        
+        .btn-decoration:hover::after {
+            opacity: 1;
+            animation: animate 20s linear infinite;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>مرحبا بك في عالم hacker x</h2>
+        <p>انقر على الأزرار للانتقال إلى المواقع المختلفة</p>
+    </div>
+    
+    <div class="buttons-container">
+        <a href="https://csg-c.github.io/csgt/" target="_blank" class="btn btn-google btn-decoration">
+            <span>موقع الخاص بي</span>
+        </a>
+        
+        <a href="https://t.me/hacker1051" target="_blank" class="btn btn-facebook btn-decoration">
+            <span>تيليجرام</span>
+        </a>
+        
+        <a href="https://www.youtube.com/@MC55_RAYAN_MK" target="_blank" class="btn btn-twitter btn-decoration">
+            <span>يوتيوب</span>
+        </a>
+        
+        </a>
+    </div>
+    
+    <div class="footer">
+        <p>فايروس تك</p>
+    </div>
+</body>
+</html>
